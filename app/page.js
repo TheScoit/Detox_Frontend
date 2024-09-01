@@ -4,7 +4,7 @@ import axios from '../utils/axios.js';
 import { useContext, useEffect, useState } from 'react'
 import Image from 'next/image.js';
 
-const page = () => {
+const Page = () => {
   const [videos,setVideos] = useState([]);
   const [loading,setLoading] = useState(true);
   const {user} = useContext(AuthContext);
@@ -72,4 +72,4 @@ const page = () => {
   );
 }
 
-export default page;
+export default Page;
